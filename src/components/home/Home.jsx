@@ -7,7 +7,7 @@ import Aos from "aos";
 import "./stye.scss"
 
 const Home = () => {
-    const countdownDate = new Date('09/30/2024');
+    const countdownDate = new Date('09/28/2024');
     const [modal, setModal] = useState(false);
     const nodeRef = useRef(null);
     const [alert, setAlert] = useState(false);
@@ -182,24 +182,23 @@ const Home = () => {
                 </div>
                 <div className="bottom-side">
                     <div className="left-side">
-                        <div className="bottom-text">
+                        <div data-aos="fade-up" className="bottom-text">
                             MEDIA ORQALI KATTA DAROMAD TOPISH
                         </div>
-                        <div onClick={() => setModal(true)} className="button-register">
 
-                            <div className="animated-button1">
+                        <div data-aos="zoom-in" onClick={() => setModal(true)} className="button-register">
+                            <div  className="animated-button1">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 Vebinarga ro'yxatdan o'tish
                             </div>
-
                         </div>
                         <div className="text-time">
                             Vebinar boshlanishi uchun qolgan vaqt!
                         </div>
-                        <div className="container">
+                        <div data-aos="flip-left" className="container">
                             {
                                 seconds < 0 ?
                                     <div className='counter-timer'> Chegirma tugadi </div>
@@ -266,10 +265,10 @@ const Home = () => {
 
                 <div className="bottom-side">
                     <div className="person-circle">
-                        <div className="bottom-text">
+                        <div data-aos="fade-up" className="bottom-text">
                             MEDIA ORQALI KATTA DAROMAD TOPISH
                         </div>
-                        <img className="people-image" src="./images/person.png" alt=""/>
+                        <img data-aos="zoom-out-up" className="people-image" src="./images/person.png" alt=""/>
                         <div className="button-register">
                             <a onClick={() => setModal(true)} className="animated-button1">
                                 <span></span>
@@ -288,7 +287,7 @@ const Home = () => {
                         Vebinar boshlanishi uchun qolgan vaqt!
                     </div>
 
-                    <div className="container">
+                    <div data-aos="flip-left" className="container">
                         {
                             seconds < 0 ?
                                 <div className='counter-timer'> Chegirma tugadi </div>
