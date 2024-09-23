@@ -7,7 +7,7 @@ import Aos from "aos";
 import "./stye.scss"
 
 const Home = () => {
-    const countdownDate = new Date('09/28/2024');
+    const countdownDate = new Date('09/30/2024');
     const [modal, setModal] = useState(false);
     const nodeRef = useRef(null);
     const [alert, setAlert] = useState(false);
