@@ -254,7 +254,7 @@ const Home = () => {
                 <div className="header">
                     <div data-aos="zoom-in" className="start-time">
                         <img src="./images/start-date.png" alt=""/>
-                        29.09.2024
+                        01.10.2024
                     </div>
 
                     <div data-aos="zoom-in" className="time">
@@ -290,7 +290,7 @@ const Home = () => {
                     <div data-aos="flip-left" className="container">
                         {
                             seconds < 0 ?
-                                <div className='counter-timer'> Chegirma tugadi </div>
+                                <div className='counter-timer'> Vebinar tugadi </div>
                                 :
                                 <div className='counter-container'>
 
