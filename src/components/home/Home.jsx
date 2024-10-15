@@ -7,7 +7,7 @@ import Aos from "aos";
 import "./stye.scss"
 
 const Home = () => {
-    const countdownDate = new Date('10/01/2024');
+    const countdownDate = new Date('2024-10-22');
     const [modal, setModal] = useState(false);
     const nodeRef = useRef(null);
     const [alert, setAlert] = useState(false);
@@ -50,6 +50,7 @@ const Home = () => {
                         setAlert(false)
                     }, 3000);
                     formOne.resetForm();
+                    window.location.href = "https://t.me/smmmunira";
                 })
         },
     });
@@ -57,6 +58,8 @@ const Home = () => {
     useEffect(() => {
         countdownDate.setHours(20, 0, 0, 0);
         Aos.init({duration: 1000});
+        let date = new Date()
+        console.log(countdownDate)
 
         const interval = setInterval(() => setNewTime(), 1000);
 
@@ -156,8 +159,8 @@ const Home = () => {
 
                         </div>
 
-                        <div onClick={() => formOne.handleSubmit()}  className="button-register">
-                            <div  className="button-71">
+                        <div onClick={() => formOne.handleSubmit()} className="button-register">
+                            <div className="button-71">
                                 Yuborish
                             </div>
                         </div>
@@ -172,7 +175,7 @@ const Home = () => {
                 <div className="header">
                     <div data-aos="zoom-in" className="start-time">
                         <img src="./images/start-date.png" alt=""/>
-                        01.10.2024
+                        22.10.2024
                     </div>
 
                     <div data-aos="zoom-in" className="time">
@@ -187,7 +190,7 @@ const Home = () => {
                         </div>
 
                         <div data-aos="zoom-in" onClick={() => setModal(true)} className="button-register">
-                            <div  className="animated-button1">
+                            <div className="animated-button1">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -254,7 +257,7 @@ const Home = () => {
                 <div className="header">
                     <div data-aos="zoom-in" className="start-time">
                         <img src="./images/start-date.png" alt=""/>
-                        01.10.2024
+                        22.10.2024
                     </div>
 
                     <div data-aos="zoom-in" className="time">
