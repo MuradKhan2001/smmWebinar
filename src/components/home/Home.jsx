@@ -43,7 +43,7 @@ const Home = () => {
                 Phone: values.phone
             };
             setModal(false)
-            axios.post(`https://sheet.best/api/sheets/413b469b-2c89-4925-a669-6508dfc63079`, lead)
+            axios.post(`https://api.sheetbest.com/sheets/210cbf3e-f573-4f51-97dd-eac8f82a7ac3`, lead)
                 .then((response) => {
                     setAlert(true);
                     setTimeout(() => {
