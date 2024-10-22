@@ -7,7 +7,7 @@ import Aos from "aos";
 import "./stye.scss"
 
 const Home = () => {
-    const countdownDate = new Date('2024-10-22');
+    const countdownDate = new Date('2024-10-24');
     const [modal, setModal] = useState(false);
     const nodeRef = useRef(null);
     const [alert, setAlert] = useState(false);
@@ -175,7 +175,7 @@ const Home = () => {
                 <div className="header">
                     <div data-aos="zoom-in" className="start-time">
                         <img src="./images/start-date.png" alt=""/>
-                        22.10.2024
+                        24.10.2024
                     </div>
 
                     <div data-aos="zoom-in" className="time">
@@ -257,7 +257,7 @@ const Home = () => {
                 <div className="header">
                     <div data-aos="zoom-in" className="start-time">
                         <img src="./images/start-date.png" alt=""/>
-                        22.10.2024
+                        24.10.2024
                     </div>
 
                     <div data-aos="zoom-in" className="time">
